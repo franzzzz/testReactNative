@@ -20,12 +20,12 @@ export default class App extends React.Component {
 
   changeCount(step) {
     this.setState(prevState => ({
-      count: prevState.count + 1
+      count: prevState.count + step
     }));
   }
 
   increase = () => {
-    this.changeCount(1);
+    this.changeCount(3);
   };
 
   render() {
